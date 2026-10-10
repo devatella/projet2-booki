@@ -13,11 +13,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <header>
-        <nav>
-            <img src="" alt="">
+        <nav class="nav-container">
+            <img src="images/logo/Booki.png" alt="logo-site-booki" class="logo-booki">
             <ul>
                 <li><a href="">Hébergements</a></li>
                 <li><a href="">Activités</a></li>
@@ -25,10 +24,12 @@
         </nav>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <form method="post">
-                <img src="" alt="">
-                <label name="localisation"></label>
-                <input type="text" id="localisation" name="localisation">Rechercher</input>
+            <form method="get" action="" class="form-style">
+                <label for="localisation" name="localisation">
+                    <i class="fa-solid fa-location-dot"></i>
+                </label>
+                <input type="text" name="localisation" id="localisation" placeholder="Marseille, France" size="30"></input>
+                <button class="bouton-rechercher">Rechercher</button>
             </form method="post">
                 <h3>Filtres</h3>
                 <button>
@@ -51,7 +52,7 @@
                     <p>Plus d'hébergements disponibles dans cette ville</p>
             </div>
     </header>
-    <div class="main-container">
+    <div class="main-container">imagesieeevvvhhhxc
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
