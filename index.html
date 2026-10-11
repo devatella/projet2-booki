@@ -13,48 +13,54 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="nav-container">
-            <img src="images/logo/Booki.png" alt="logo-site-booki" class="logo-booki">
-            <ul>
-                <li><a href="">Hébergements</a></li>
-                <li><a href="">Activités</a></li>
-            </ul>
-        </nav>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <form method="get" action="" class="form-style">
-                <label for="localisation" name="localisation">
-                    <i class="fa-solid fa-location-dot"></i>
-                </label>
-                <input type="text" name="localisation" id="localisation" placeholder="Marseille, France" size="30"></input>
-                <button class="bouton-rechercher">Rechercher</button>
-            </form method="post">
-                <h3>Filtres</h3>
-                <button>
-                    <i class="fa-xs fa-money-bill-wave" aria-hidden="true"></i>
-                    <span>Economique</span>
-                </button>
-                <button>
-                    <i class="fa-xs fa-money-bill-wave" aria-hidden="true"></i>
-                    <span>Familial</span>
-                </button>
-                <button>
-                    <i class="fa-xs fa-money-bill-wave" aria-hidden="true"></i>
-                    <span>Romantique</span>
-                </button>
-                <button>
-                    <i class="fa-xs fa-money-bill-wave" aria-hidden="true"></i>
-                    <span>Nos pépites</span>
-                </button>
-            <div>
-                    <p>Plus d'hébergements disponibles dans cette ville</p>
-            </div>
-    </header>
-    <div class="main-container">imagesieeevvvhhhxc
+    <div class="main-container">     <!--Faux-ami : "main" fait ici référence au Conteneur définit comme le principal et non pas à la balise sémantique <main>-->
+        <header>
+            <nav class="nav-container">
+                <img src="images/logo/Booki.png" alt="logo-site-booki" class="logo-booki">
+                <ul>
+                    <li><a href="">Hébergements</a></li>
+                    <li><a href="">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <div class="hebergements-and-populaires">
+            <section class="hero">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                    <form method="get" action="" class="form-style">
+                        <label for="localisation" name="localisation">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </label>
+                        <input type="text" name="localisation" id="localisation" placeholder="Marseille, France" size="30"></input>
+                        <button class="bouton-rechercher">Rechercher</button>
+                    </form>
+                    <div class="hero-title-and-filters">
+                        <h3>Filtres</h3>
+                        <button class="filter-button">
+                            <i class="fa-solid fa-money-bill-wave theme-filter" aria-hidden="true"></i>
+                            <span>Economique</span>
+                        </button>
+                        <button class="filter-button">
+                            <i class="fa-solid fa-person" aria-hidden="true"></i>
+                            <span>Familial</span>
+                        </button>
+                        <button class="filter-button">
+                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                            <span>Romantique</span>
+                        </button>
+                        <button class="filter-button">
+                            <i class="fa solid fa-fire" aria-hidden="true"></i>
+                            <span>Nos pépites</span>
+                        </button>
+                    </div>
+                    <div class="info-container">
+                            <span class="info-circle"><i class="fa-solid fa-light fa-info"></i></span>
+                            <p>Plus d'hébergements disponibles dans cette ville</p>
+                    </div>
+            </section>
+                <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergement-marseille-titre"><h2>Hébergements à Marseille</h2></div>
                         <a href="">
@@ -149,10 +155,9 @@
                     </div>
                     <div>
                         <p>Afficher plus</p>
-                    </div>
-
+                </div>
                 </section>
-                <section class="populaires">
+            <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -216,9 +221,9 @@
                             </article>
                         </a>
                     </div>
-                </section>
+            </section>
             </div>
-        <section class="activites">
+            <section class="activites">
                 <div class="titre">
                     <h2>Activités à Marseille</h2>
                 </div>
@@ -248,7 +253,7 @@
                 </article>
                 </div>
             </a>
-        </section>
+            </section>
     </main>
     <footer>
             <section class="informations-complementaires">
