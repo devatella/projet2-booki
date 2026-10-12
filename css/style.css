@@ -55,12 +55,11 @@ body {
 
 .nav-container ul li {
     display: flex;
-    border:2px solid white;
-    padding: 10px 0px 0px 0px;
     justify-content: space-between;
+    padding: 22px;
 }
 
-.nav-container ul li:hover {
+.nav-container li:hover {
     border-top: 2px solid var(--main-color);
     color:var(--main-color);
 }
@@ -151,8 +150,8 @@ body {
     height: 24px;
     width: 24px;
     text-align: center;
-    align-content:center;
-    border: 1px solid lightgrey;
+    align-content: center;
+    border: 1px solid var(--filter-bg-color);
     border-radius:50px;
     margin-right: 20px;
     font-size: 10px;
@@ -325,6 +324,11 @@ a {
     padding: 10px;
 }
 
+.footer-links {
+    display:flex;
+    flex-direction:column;
+    gap: 5px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
