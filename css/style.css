@@ -1,6 +1,11 @@
+
 /****** General ***********/
+
+/* Le code de base, commun à Desktop et autres versions */
+
 * {
     font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -18,10 +23,10 @@
 
 body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 35px;
 }
+
+/* main-container permet de centrer la page sur grands écrans */
 
 .main-container {
     display: flex;
@@ -29,65 +34,62 @@ body {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
     gap: 35px;
-}
-
-.main-sub-container {
-    display: flex;
-    flex-direction: column;
-    height: 1722.02px;
-    max-width: 1440px;
-    box-sizing: border-box;
-    gap: 35px;
-}
-
-.nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1440px;
-    height: 79px;
-}
-
-.logo-booki {
-    display: flex;
-    align-content: center;
-    justify-content: left;
-    height: 79px;
-    padding: 30px 50px 30px 0px;
-    
-}
-
-.logo-booki img {
-    height: 19px;
-    width: 61.09px;
-    margin:0px;
 }
 
 /***Header***/
 
-.nav-container ul {
+header {
     display: flex;
     flex-direction: row;
-    height: 35px;
-    width: fit-content;
-    align-items: center;
-    gap: 30px;
-    padding:0px;
-    margin: 0px;
+    height: 79px;
+    justify-content: space-between;
 }
 
-.nav-container ul li {
+.logo-container {
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    padding: 30px 50px 30px 0px;
+}
+
+.logo-container img {
+    height: auto;
+    width: 61.09px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* TODO : à revoir / refactoriser */
+
+header nav ul li {
     list-style: none;
-    height:35px;
-    padding: 9px 22px 0px 22px;
+    width: 100%;
+    height: 35px;
+    padding: 9px 30px 0px 30px;
+    border-top: 2px solid white;
 }
 
-.nav-container ul li:hover {
+header nav ul li:hover {
     border-top: 2px solid var(--main-color);
     color:var(--main-color);
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 
 /***Hero***/
 
@@ -95,6 +97,7 @@ body {
     display:flex;
     flex-direction: column;
     height: 281px;
+    width: auto;
 }
 
 .hero-search {
@@ -105,7 +108,9 @@ body {
 }
 
 .hero-title {
+    flex-shrink: 0;
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     height: 53px;
     width: 1340px;
@@ -113,24 +118,30 @@ body {
 }
 
 .hero-title h1 {
+    flex-shrink: 0;
+    width: 60%;
     font-size: 22px;
 }
 
 .hero i {
+    flex-shrink: 0;
     color:var(--main-color);
 }
 
 .filter-title-and-filters {
     display:flex;
+    flex-shrink: 0;
     flex-direction:row;
     justify-content: left;
     align-items: center;
     height:50px;
     font-size:15px;
+    gap: 15px;
 }
 
 .form-style {
     display:flex;
+    flex-shrink: 0;
     flex-direction: row;
     height:50px;
 }
@@ -146,6 +157,7 @@ body {
 }
 
 .form-style label i {
+    flex-shrink: 0;
     color:black;
 }
 
@@ -162,6 +174,7 @@ body {
 }
 
 .form-style input::placeholder {
+    font-size: 18px;
     color:black;
 }
 
@@ -198,6 +211,7 @@ body {
 }
 
 .filter-button i {
+    flex-shrink: 0;
     font-size: 22px
 }
 
@@ -213,11 +227,13 @@ body {
 
 .info-container {
     display:flex;
+    flex-shrink: 0;
     flex-direction: row;
     align-items: center;
 }
 
 .info-circle {
+    flex-shrink: 0;
     height: 24px;
     width: 24px;
     text-align: center;
@@ -264,9 +280,11 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    width: auto;
 }
 
 .hebergements-and-populaires section {
@@ -289,10 +307,9 @@ a {
 }
 
 .hebergement-cards {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr;
-    gap:20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .hebergement-cards .card {
@@ -331,6 +348,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
 }
+
 .section-title {
     display: flex;
     justify-content: space-between;
@@ -378,6 +396,7 @@ a {
     display:flex;
     flex-direction: column;
     height: 559.02px;
+    width: auto;
     margin: 30px;
     gap: 30px;
 }
@@ -447,6 +466,7 @@ a {
     gap: 15px;
 }
 
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -488,3 +508,4 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
