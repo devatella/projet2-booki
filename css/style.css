@@ -99,7 +99,7 @@ main {
 }
 
 .hero-search {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap:35px;
 }
@@ -121,13 +121,12 @@ main {
     color:var(--main-color);
 }
 
-.form-style {
+form  {
     display:flex;
-    flex-direction: row;
-    height:50px;
+    height: 50px;
 }
 
-.form-style label {
+form label {
     display:flex;
     justify-content:center;
     align-items: center;
@@ -137,11 +136,11 @@ main {
     border:var(--main-bg-color);
 }
 
-.form-style label i {
+form label i {
     color:black;
 }
 
-.form-style input {
+form input {
     font-weight: bold;
     font-size:18px;
     text-align: center;
@@ -152,17 +151,18 @@ main {
     border-left: 1px solid var(--main-bg-color);
 }
 
-.form-style input::placeholder {
+form input::placeholder {
     justify-self: start;
     font-size: 18px;
     color:black;
 }
 
-.form-style input:focus {
+form input:focus {
     outline:none;
 }
 
-.bouton-rechercher {
+.rechercher {
+    width: auto;
     background-color:var(--main-color);
     color: white;
     font-weight:bold;
@@ -170,6 +170,16 @@ main {
     padding:13px;
     border:lightgray;
     border-radius: 0px 15px 15px 0px;
+}
+
+.rechercher i {
+    color: var(--main-bg-color);
+    justify-content: center;
+    display: none;
+}
+
+.rechercher span {
+    display: show;
 }
 
 .filters-and-title h3 {
@@ -186,16 +196,16 @@ main {
 .filters {
     display: flex;
     flex-direction: row;
-    width: fit-content;
     justify-content: center;
     align-content: center;
-    font-size:15px;
     gap: 15px;
 }
 
 .filters button {
     display: flex;
     flex-direction: row;
+    font-size: 16px;
+    font-weight: bold;
     height:50px;
     padding: 4px 19px 4px 19px;
     background-color:white;
@@ -205,13 +215,7 @@ main {
     gap: 10px;
 }
 
-.filter-button span {
-    font-size: 17px;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.filter-button i {
+.filters button i {
     font-size: 22px
 }
 
@@ -516,11 +520,6 @@ a {
     gap: 10px;
 }
 
-.filters-and-title h3 {
-
-}
-
-
 .hebergements-and-populaires {
     flex-direction: column;
 }
@@ -551,74 +550,107 @@ a {
 .populaires-cards .card-subtitle {
     font-size: 13px;
 }
-
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
     /* ... */
 
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+
+.main-container {
+max-width: 768px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-container {
+    justify-content: center;
+}
+
+header nav {
+    flex-direction: column;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+}
+
+.rechercher i {
+    color: var(--main-bg-color);
+    justify-content: center;
+    display: block;
+}
+
+.rechercher span {
+    display: none;
+}
+
+
+.filters {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filters button {
+    font-size: 14px;
+    width: 48%;
+}
+
+.hebergements-and-populaires {
+    flex-direction: column-reverse;
+}
+
+.hebergement-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hebergement-card img {
+    width: auto;
+}
+
+.populaires-cards a {
+    width: auto;
     }
 
-    .logo-container {
-        justify-content: center;
-    }
+.populaires-cards {
+    flex-direction: column;
+    width: auto;
+}
 
-    header nav {
-        flex-direction: column;
-    }
+.activites-list {
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-    header ul {
-        display: flex;
-        justify-content: center;
-    }
+.activite-card-content {
+    height: 200px;
+    width: auto;
+}
 
-    .hebergements-and-populaires {
-        flex-direction: column-reverse;
-    }
+.activite-card-content img {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+}
 
-    .hebergement-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .hebergement-card img {
-        width: auto;
-    }
-
-    .populaires-cards a {
-        width: auto;
-        }
-
-    .populaires-cards {
-        flex-direction: column;
-        width: auto;
-    }
-
-    .activites-list {
-        display:flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .activite-card-content {
-        height: 200px;
-        width: auto;
-    }
-
-    .activite-card-content img {
-        object-fit: cover;
-        height: 70%;
-        width: 100%;
-    }
-
-    .activite-cards-content {
-        height: 30%;
-        width: auto;
-    }
+.activite-cards-content {
+    height: 30%;
+    width: auto;
+}
 
 }
