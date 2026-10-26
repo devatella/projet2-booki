@@ -61,20 +61,23 @@ header {
 header nav {
     display: flex;
     flex-direction: row;
+    width: 30%;
 }
 
 header nav ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
 }
 
 
 /* TODO : à revoir / refactoriser */
 
 header nav ul li {
+    display: flex;
     list-style: none;
-    padding: 9px 30px 0px 30px;
+    padding: 9px 0px 0px 0px;
     border-top: 2px solid white;
 }
 
@@ -104,13 +107,13 @@ main {
     gap:35px;
 }
 
-.hero-title {
+.hero-txt {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.hero-title h1 {
+.hero-txt h1 {
     display: flex ;
     flex-direction: row;
     flex-wrap: wrap;
@@ -161,7 +164,7 @@ form input:focus {
     outline:none;
 }
 
-.rechercher {
+.search {
     width: auto;
     background-color:var(--main-color);
     color: white;
@@ -172,13 +175,13 @@ form input:focus {
     border-radius: 0px 15px 15px 0px;
 }
 
-.rechercher i {
+.search i {
     color: var(--main-bg-color);
     justify-content: center;
     display: none;
 }
 
-.rechercher span {
+.search span {
     display: show;
 }
 
@@ -552,6 +555,7 @@ a {
 }
 }
 
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
     /* ... */
@@ -571,13 +575,42 @@ header {
     justify-content: center;
 }
 
-header nav {
+header {
     flex-direction: column;
 }
 
-header ul {
+header nav {
     display: flex;
+    width: 100%;
     justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav ul li {
+    display: flex;
+    width: 50%;
+    gap: 0px;
+    justify-content: center;
+    border: none;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 2px solid white;
+}
+
+header nav ul li a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+header nav ul li :hover {
+    padding: 9px 0px 30px;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
 }
 
 form {
@@ -588,13 +621,13 @@ form input {
     width: 100%;
 }
 
-.rechercher i {
+.search i {
     color: var(--main-bg-color);
     justify-content: center;
     display: block;
 }
 
-.rechercher span {
+.search span {
     display: none;
 }
 
@@ -652,5 +685,4 @@ form input {
     height: 30%;
     width: auto;
 }
-
 }
