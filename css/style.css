@@ -302,10 +302,10 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    gap: 30px;
+    gap: 40px;
 }
 
-.hebergements-and-populaires h2 {
+.hebergements-and-populaires .section-title {
     font-size: 22px;
 }
 
@@ -434,7 +434,7 @@ a {
 }
 
 
-.activite-title h2 {
+.activite .section-title {
     font-size: 22px;
 }
 
