@@ -67,19 +67,16 @@ header nav {
 header nav ul {
     display: flex;
     width: 100%;
-    gap: 15px;
+    gap: 68px;
     justify-content: center;
 }
-
-
-/* TODO : à revoir / refactoriser */
 
 header nav ul li {
     display: flex;
     list-style: none;
     padding: 9px 0px 0px 0px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
 }
 
 header nav ul li:hover {
@@ -120,6 +117,10 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 22px;
+}
+
+.hero label i {
+    color: black;
 }
 
 .hero i {
@@ -236,12 +237,11 @@ form input:focus {
 }
 
 .info-circle {
-    text-align: center;
     align-content: center;
     border: 1px solid var(--filter-bg-color);
-    border-radius:50px;
     margin-right: 20px;
-    font-size: 10px;
+    padding: 5px 12px 5px 12px;
+    border-radius: 50px;
 }
 
 /***Commun***/
@@ -388,8 +388,7 @@ a {
 .populaires-cards img {
     width: 33%;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .populaires-cards .card-content {
@@ -628,13 +627,17 @@ form input {
     width: 100%;
 }
 
+form label i {
+    color:black;
+}
+
 .search {
     height: 49px;
     width: 49px;
     border-radius: 15px;
     border: 1px;
     padding: 15px 16px 15px 16px;
-    box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px 0px rgba(0.5, 0.5, 0.5, 0.14);
 }
 
 .search i {
@@ -657,6 +660,10 @@ form input {
     width: 48%;
 }
 
+.hebergements-and-populaires {
+    flex-direction: column-reverse;
+}
+
 .hebergements-and-populaires .hebergements {
     background-color: white;
     border-radius: 0px;
@@ -664,10 +671,8 @@ form input {
 }
 
 .hebergements-and-populaires .populaires {
-    flex-direction: column-reverse;
     border-radius: 0px;
 }
-
 
 .hebergement-cards {
     flex-direction: column;
@@ -677,14 +682,15 @@ form input {
     width: 100%;
 }
 
-.populaires {
-    background-color: var(--main-bg-color);
-    padding: 0px 20px 0px 20px;
-}
-
 .populaires-cards {
     flex-direction: column;
+    padding: 5px;
 }
+
+.populaires-cards img {
+    border-radius: 15px 0px 0px 15px;
+}
+
 
 .populaires-cards a {
     width: 100%;
