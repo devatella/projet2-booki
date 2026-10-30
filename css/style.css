@@ -477,10 +477,8 @@ a {
     align-items: center;
 }
 
-.activites-cards .card-txt h4 {
-    
+.activites-cards .card-title {
     flex-wrap: wrap;
-    font-size: 16px;
     justify-self: left;
     align-items: center;
     padding-left: 19px;
@@ -554,10 +552,6 @@ a {
 
 .populaires-cards a {
     width: 30%;
-}
-
-.populaires-cards .card-title {
-    font-size: 14px;
 }
 
 .populaires-cards .card-subtitle {
