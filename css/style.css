@@ -359,6 +359,10 @@ a {
     flex: 1;
 }
 
+.hebergements-cards .card-txt p {
+    font-size: 14px;
+}
+
 .hebergements-cards .card-rating {
     height: auto;
     width: auto;
@@ -407,6 +411,10 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.populaires-cards .card-txt p {
+    font-size: 14px;
 }
 
 .populaires-cards .card-title {
