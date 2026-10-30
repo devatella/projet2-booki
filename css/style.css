@@ -120,6 +120,10 @@ main {
     font-size: 22px;
 }
 
+.hero-txt p {
+    font-size: 16px;
+}
+
 .hero label i {
     color: black;
 }
@@ -149,7 +153,7 @@ form label i {
 
 form input {
     font-weight: bold;
-    font-size:18px;
+    font-size: 18px;
     text-align: center;
     align-content: center;
     border-top: 1px solid var(--main-bg-color);
@@ -173,7 +177,7 @@ form input:focus {
     background-color:var(--main-color);
     color: white;
     font-weight:bold;
-    font-size:16px;
+    font-size: 18px;
     padding:13px;
     border:lightgray;
     border-radius: 0px 15px 15px 0px;
@@ -190,7 +194,7 @@ form input:focus {
 }
 
 .filters-and-title h3 {
-    padding-right: 15px;
+    padding-right: 18px;
 }
 
 .filters-and-title {
@@ -211,7 +215,7 @@ form input:focus {
 .filters button {
     display: flex;
     flex-direction: row;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     height:50px;
     padding: 4px 19px 4px 19px;
@@ -237,12 +241,16 @@ form input:focus {
     align-items: center;
 }
 
-.info-circle {
+.info-container .info-circle {
     align-content: center;
     border: 1px solid var(--filter-bg-color);
     margin-right: 20px;
     padding: 5px 12px 5px 12px;
     border-radius: 50px;
+}
+
+.info-container p {
+    font-size: 16px;
 }
 
 /***Commun***/
