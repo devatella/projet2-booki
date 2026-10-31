@@ -193,23 +193,23 @@ form input:focus {
     display: show;
 }
 
-.filters-container h3 {
-    padding-right: 18px;
-}
-
 .filters-container {
     display:flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 
+.filters-container h3 {
+    padding-right: 18px;
+}
 
 .filters-container .filters {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .filters-container .filters button {
@@ -234,7 +234,6 @@ form input:focus {
     background-color: var(--filter-bg-color);
 }
 
-
 .info-container {
     display:flex;
     flex-direction: row;
@@ -242,11 +241,18 @@ form input:focus {
 }
 
 .info-container .info-circle {
-    align-content: center;
+    display: flex;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
     border: 1px solid var(--filter-bg-color);
     margin-right: 20px;
-    padding: 5px 12px 5px 12px;
     border-radius: 50px;
+}
+
+.info-container .info-circle i {
+    font-size: 11px;
 }
 
 .info-container p {
@@ -260,7 +266,7 @@ a {
     text-decoration: none;
 }
 
-.section-title {
+.activites h2 {
     margin: 0;
     font-size: 22px;
 }
@@ -447,7 +453,7 @@ a {
 }
 
 
-.activite .section-title {
+.activite h2 {
     font-size: 22px;
 }
 
@@ -468,36 +474,28 @@ a {
     flex-direction: column;
     padding: 0px;
     width: 100%;
+    flex: 1;
 }
 
-.activites-cards .card-content {
+.activites-cards .card img {
     display: flex;
-    height: 439px;
-    flex-direction: column;
-}
-
-.activites-cards img {
-    display: flex;
-    height: 80%;
+    height: 380px;
     width: auto;
     border-radius: 20px 20px 0px 0px;
 }
 
-.activites-cards .card-txt {
+.activites-cards .card .card-txt {
     display: flex;
     flex-wrap: wrap;
-    height: 20%;
     align-items: center;
+    width: 100%;
+    flex: 1;
 }
 
-.activites-cards h4 {
-    flex-wrap: wrap;
-    justify-self: left;
-    align-items: center;
+.activites-cards .card h3 {
     font-size: 16px;
-    padding-left: 19px;
+    padding: 20px 19px 20px 19px;
 }
-
 
 /***Footer***/
 
@@ -577,6 +575,14 @@ footer {
 
 .populaires-cards .card-subtitle {
     font-size: 13px;
+}
+
+.activites-cards .card img {
+    height: 200px;
+}
+
+.activites-cards .card h3 {
+    font-size: 16px;
 }
 }
 
@@ -677,6 +683,7 @@ form label i {
 .filters-container .filters {
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 .filters-container .filters button {
@@ -723,8 +730,8 @@ form label i {
     width: 100%;
 }
 
-.activites-cards a {
-    width: 100%;
+.activites {
+    padding: 0px 30px 0px 30px;
 }
 
 .activites-cards {
@@ -733,9 +740,14 @@ form label i {
     gap: 15px;
 }
 
-.activites {
-    padding: 0px 30px 0px 30px;
+.activites-cards a {
+    width: 100%;
 }
+
+.activites-cards h3 {
+    width: 100%;
+}
+
 
 
 .article {
