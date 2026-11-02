@@ -54,7 +54,7 @@ header {
 }
 
 .logo-container img {
-    height: auto;
+    height: 19px;
     width: 61.09px;
 }
 
@@ -75,8 +75,8 @@ header nav ul li {
     list-style: none;
     font-size: 16px;
     padding: 9px 0px 0px 0px;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 header nav ul li:hover {
@@ -152,6 +152,7 @@ form input {
     font-weight: bold;
     font-size: 18px;
     padding-left: 18px;
+    width: fit-content;
     align-content: center;
     border-top: 1px solid var(--main-bg-color);
     border-right: 1px solid white;
@@ -193,6 +194,7 @@ form input:focus {
 .filters-container {
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
@@ -214,11 +216,11 @@ form input:focus {
     flex-direction: row;
     font-size: 17px;
     font-weight: bold;
-    height:50px;
+    height: 50px;
     padding: 4px 19px 4px 19px;
     background-color:white;
-    border: 2px solid #D9D9D9;
-    border-radius:50px;
+    border: 2px solid lightgray;
+    border-radius: 50px;
     align-items: center;
     gap: 10px;
     white-space: nowrap;
@@ -286,7 +288,8 @@ a {
 }
 
 .euro {
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .neutral-star {
@@ -322,7 +325,6 @@ a {
     width:65%;
     gap: 30px;
 }
-
 
 .hebergements-cards {
     display: flex;
@@ -373,11 +375,6 @@ a {
 
 .hebergements-cards .card-txt p {
     font-size: 14px;
-}
-
-.hebergements-cards .card-rating {
-    height: auto;
-    width: auto;
 }
 
 .afficher-plus {
@@ -666,7 +663,7 @@ footer {
     }
 
     form label i {
-        color:black;
+        color: black;
     }
 
     .search {
@@ -675,7 +672,7 @@ footer {
         border-radius: 15px;
         border: 1px;
         padding: 15px 16px 15px 16px;
-        box-shadow: 0px 4px 4px 0px rgba(0.5, 0.5, 0.5, 0.14);
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
     }
 
     .search i {
@@ -724,6 +721,11 @@ footer {
 
     .hebergements-cards a {
         width: 100%;
+    }
+
+    .hebergement-cards {
+        height: 81px;
+        width: 12px;
     }
 
     .populaires-cards {
