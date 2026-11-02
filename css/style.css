@@ -248,7 +248,7 @@ form input:focus {
     width: 24px;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--filter-bg-color);
+    border: 1px solid lightgrey;
     border-radius: 50px;
 }
 
@@ -553,6 +553,11 @@ footer {
         align-items: flex-start;
         gap: 10px;
     }
+
+    .filters-container .filters button {
+        font-size: 16px;
+    }
+
 
     .hebergements-and-populaires {
         flex-direction: column;
